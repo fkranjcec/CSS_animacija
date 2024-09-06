@@ -1,0 +1,61 @@
+/* $color1: white;
+$color2: rgba(51, 51, 51, 0.85);
+$color3: rgba(136, 0, 0, 0.5);
+$color4: rgba(255, 153, 51, 0.5); */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("blur-clean.jpg") center center/cover no-repeat fixed;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper div {
+  width: 15vw;
+  font-size: 20vh;
+  font-weight: bold;
+  border: 3px solid white;
+  text-align: center;
+  color: white;
+  padding: 5%;
+}
+.wrapper .one,
+.wrapper .two,
+.wrapper .three {
+  position: relative;
+  top: -100vh;
+}
+.wrapper .one {
+  background-color: rgba(51, 51, 51, 0.85);
+  animation: animacija 1500ms ease 0ms 1 forwards;
+}
+.wrapper .two {
+  background-color: rgba(136, 0, 0, 0.5);
+  animation: animacija 1500ms ease 1500ms 1 forwards;
+}
+.wrapper .three {
+  background-color: rgba(255, 153, 51, 0.5);
+  animation: animacija 1500ms ease 3000ms 1 forwards;
+}
+@keyframes animacija {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}/*# sourceMappingURL=style.css.map */
